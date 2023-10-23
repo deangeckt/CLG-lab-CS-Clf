@@ -1,0 +1,42 @@
+
+hearring 1 csv:
+
+1. she gets like ten people (ten - CARDINAL)
+2. or they get millions of dollars to donate (millions - CARDINAL)
+3. im leaving on friday (friday - DATE)
+4. you check you email at nicaragua (nicaragua-GPE)
+5. se jalo la cara de nuevo (jalo - PER, cara - LOC)
+	translation: "he pulled his face again"
+6. and your grandmother was like oh todo se mira en las manos 
+(your PER, grandmother MISC, was ORG, like PER, mira LOC)
+translate: "oh everything is seen in the hands"
+spanish spacy model cause majority! - very bad
+the vector: "grandmother was like oh todo" has 3 NER entities!
+
+7.but they sold their house verdad (verdad - ORG)
+another cs (label 1) vector with worng NER
+
+8. it 's a little machista (machista - PERSON)
+machista - male chauvinist
+
+9. nick and his mom que todo era como hombre ( nick PER, his - ORG)
+spanish majoriry 
+
+
+10. pero he he works (pero - ORG)
+(english majoriy)
+first vector - "pad pad pad pero he"
+		ner vec: [11, 11, 11, 6, 11]
+		label: 1
+		
+		  
+
+מסקנה כבר פה 
+על הפנים הסיגנל הזה!
+
+כיוון שבוחרים את השפה הראשית במשפט ואז משתמשים במודל
+משפטים מראש עם קוד סווטיצ', מכילים בהכרח מילים ב2 השפות
+בטוח נקרא למודל שפה הלא נכון מתישהוא - ולא בטוח הוא ישקר - ובטוח נקבל סיגנאל
+
+זה מסביר למה כפיטשר, זה שיפר את הסיווג
+הכנסו רעש, אבל רעש שמאפיין משפטים עם סוויטצ'
