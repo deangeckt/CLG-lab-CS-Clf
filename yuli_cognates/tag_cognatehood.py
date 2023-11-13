@@ -10,7 +10,7 @@ def parse_cognate_file(lng):
     :return: dict of Yuli's file
     """
     res = {}
-    with open(f'{lng}_cognates_final.txt') as f:
+    with open(f'{lng}_cognates_sorted_streched.txt') as f:
         lines = f.readlines()
         for l in lines:
             split = l.strip().split()
@@ -68,7 +68,7 @@ def tag_all_utterances(dirname, filename):
 
 
     df['cognatehood'] = cognatehood
-    new_path = os.path.join('../bm_tagged_w_cognatehood', filename)
+    new_path = os.path.join('../bm_tagged_w_cognatehood_streched', filename)
     df.to_csv(new_path)
 
 

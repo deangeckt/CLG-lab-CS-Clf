@@ -79,7 +79,7 @@ def read_corpus(root_dir):
     return utterances
 
 def raw_csv_to_dat():
-    utterances = read_corpus('bm_tagged_w_cognatehood')
+    utterances = read_corpus('bm_tagged_w_cognatehood_streched')
     with open("corpus/all_uter_with_cognatehood.dat", "wb") as f:
         pickle.dump(utterances, f)
 
